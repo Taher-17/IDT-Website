@@ -38,7 +38,12 @@ export default async function PrivacyPolicy({ params }: AppDetailProps) {
 
   if (!app) notFound();
 
-  const filePath = path.join(process.cwd(), "content", app.id, "terms.md");
+  const filePath = path.join(
+    process.cwd(),
+    "content",
+    app.id,
+    "privacypolicy.md"
+  );
   if (!fs.existsSync(filePath)) notFound();
 
   const fileContent = fs.readFileSync(filePath, "utf8");
