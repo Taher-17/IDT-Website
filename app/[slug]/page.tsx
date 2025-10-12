@@ -31,7 +31,7 @@ function AppHero(app: AppItem) {
         </p>
 
         <Image
-          src="/images/featured/polaroid-ai.jpg"
+          src={app.heroURL}
           alt="Download on the App Store"
           width={1920}
           height={1080}

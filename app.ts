@@ -25,6 +25,29 @@ export const apps: AppItem[] = [
     heroURL: "/images/featured/polaroid-ai.jpg",
     linkURL: "https://apps.apple.com/app/id6448311065",
     categories: ["Photography", "AI"],
-    tags: ["photos", "images", "AI", "polaroid"],
+    tags: [
+      "photos",
+      "images",
+      "AI",
+      "polaroid",
+      "gemini",
+      "celebrity",
+      "trend",
+    ],
+  },
+  {
+    id: "unblur",
+    path: "Unblur",
+    title: "Unblur",
+    subtitle: "Unblur, restore and improve images",
+    description:
+      "Unblur - Enhance and Sharpen Your Photos with AI Unblur is an advanced AI-powered photo enhancement app designed to bring clarity and detail back to your blurry images. Whether it's a cherished memory or a professional shot, Unblur helps you restore and enhance your photos effortlessly.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.Unblur/large",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/dc/a4/93dca410-d159-3de9-f23f-a822f97eeb46/Frame_1.png/460x0w.webp",
+    linkURL: "https://apps.apple.com/app/id6448311065",
+    categories: ["Photography", "AI"],
+    tags: ["photos", "images", "AI", "restore", "sharpen", "enhance", "remini"],
   },
 ];
