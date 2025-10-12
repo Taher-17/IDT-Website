@@ -1,8 +1,8 @@
-import { externalAppsURL } from "@/constants";
-import Navbar from "@/components/NavBar";
-import Footer from "@/components/Footer";
-import HeroSection from "@/components/HeroSection";
-import FeaturedSection from "@/components/FeaturedSection";
+export const metadata = {
+  title: "Innovative Digital Technologies - About",
+  description:
+    "About Innovative Digital Technologies, a New Zealand-based software solutions and iOS development company specializing in apps for Apple platforms, App Store Optimization, Mobile Security, and more.",
+};
 
 function AboutContent() {
   return (

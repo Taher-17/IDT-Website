@@ -9,28 +9,22 @@ import React from "react";
 export const metadata = {
   title: "Innovative Digital Technologies",
   description:
-    "Discover what your users are searching for and grow your app 10x faster. Innovative Digital Technologies helps your app gain visibility and traction.",
+    "Discover iOS apps, AI tools, and software solutions by Innovative Digital Technologies. Explore our featured apps and learn more about our expertise in app development, App Store Optimization, and Mobile Security.",
   keywords: [
     "digital technology",
     "app growth",
     "app marketing",
     "innovative tech",
+    "ios",
+    "ai",
   ],
-  authors: [{ name: "Your Name or Company" }],
+  authors: [{ name: "Innovative Digital Technologies" }],
   openGraph: {
     title: "Innovative Digital Technologies",
     description:
       "Discover what your users are searching for and grow your app 10x faster. Innovative Digital Technologies helps your app gain visibility and traction.",
-    url: "https://yourwebsite.com",
+    url: "https://innovativedigitaltechnologies.software",
     siteName: "IDT",
-    images: [
-      {
-        url: "https://yourwebsite.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "IDT Landing Page",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -38,9 +32,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Innovative Digital Technologies",
     description:
-      "Discover what your users are searching for and grow your app 10x faster. Innovative Digital Technologies helps your app gain visibility and traction.",
-    images: ["https://yourwebsite.com/og-image.png"],
-    creator: "@YourTwitterHandle",
+      "Discover iOS apps, AI tools, and software solutions by Innovative Digital Technologies. Explore our featured apps and learn more about our expertise in app development, App Store Optimization, and Mobile Security.",
   },
 };
 
