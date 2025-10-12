@@ -16,6 +16,6 @@ export const featuredItems: FeaturedItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Polaroid-AI/large",
     heroURL: "/images/featured/polaroid-ai.jpg",
-    linkURL: "https://apps.apple.com/app/id6448311065",
+    linkURL: "/PolaroidAI",
   },
 ];

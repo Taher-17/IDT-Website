@@ -47,12 +47,8 @@ export const metadata = {
 export default function LandingPage() {
   return (
     <>
-      <Navbar />
-      <main>
-        <HeroSection />
-        <FeaturedSection />
-      </main>
-      <Footer />
+      <HeroSection />
+      <FeaturedSection />
     </>
   );
 }

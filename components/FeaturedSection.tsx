@@ -4,8 +4,8 @@ import { featuredItems } from "@/featured";
 export default function FeaturedSection() {
   return (
     <div className="bg-gray-100 dark:bg-black">
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8 py-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6">
+        <section className="max-w-7xl mx-auto flex flex-col gap-8 py-16">
           <div>
             <h1 className="text-4xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               Featured

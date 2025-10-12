@@ -1,18 +1,123 @@
 import { notFound } from "next/navigation";
-import Head from "next/head";
-// import apps from "../../../data/apps"; // your app data
-import Navbar from "../../components/NavBar";
+import { apps, AppItem } from "@/app";
+import { contactEmail } from "@/constants";
+import Image from "next/image";
+import Link from "next/link";
 
 interface AppDetailProps {
   params: { slug: string };
 }
 
-export default async function AppDetailPage({ params }: AppDetailProps) {
-  const { slug } = await params;
+function AppHero(app: AppItem) {
+  return (
+    <div className="flex flex-col items-center text-center gap-6 sm:gap-8">
+      {/* App Icon */}
+      <Image
+        src={app.iconURL}
+        alt={`${app.title} Icon`}
+        width={120}
+        height={120}
+        className="rounded-3xl"
+      />
+
+      {/* App Info */}
+      <div className="flex flex-col items-center text-center max-w-2xl">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
+          {app.title}
+        </h1>
+
+        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+          {app.subtitle}
+        </p>
+
+        <Image
+          src="/images/featured/polaroid-ai.jpg"
+          alt="Download on the App Store"
+          width={1920}
+          height={1080}
+          className="object-contain w-full h-auto rounded-xl m-4"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+      </div>
+
+      <div>
+        <DownloadButton {...app} />
+      </div>
+
+      <p className="text-base text-m text-gray-600 dark:text-gray-300 leading-relaxed pt-4">
+        {app.description}
+      </p>
+    </div>
+  );
+}
+
+function DownloadButton(app: AppItem) {
+  return (
+    <a
+      href={app.linkURL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block"
+    >
+      {/* Light mode badge */}
+      <Image
+        src="/images/AppStoreBadge-White.svg"
+        alt="Download on the App Store"
+        width={140}
+        height={48}
+        className="block dark:hidden"
+      />
+      {/* Dark mode badge */}
+      <Image
+        src="/images/AppStoreBadge-Black.svg"
+        alt="Download on the App Store"
+        width={140}
+        height={48}
+        className="hidden dark:block"
+      />
+    </a>
+  );
+}
+
+function Links(app: AppItem) {
   return (
     <>
-      <Navbar />
-      <div>App Detail Page for {slug}</div>
+      <div className="flex flex-col sm:flex-row gap-4 text-gray-600 dark:text-gray-400 text-sm mt-12">
+        <Link href={`${app.path}/privacypolicy`} className="hover:underline">
+          Privacy Policy
+        </Link>
+        <Link href={`${app.path}/terms`} className="hover:underline">
+          Terms of Service
+        </Link>
+        <a
+          href={`mailto:${contactEmail}?subject=${app.title}`}
+          className="hover:underline"
+        >
+          Support
+        </a>
+      </div>
+    </>
+  );
+}
+
+export default async function AppDetailPage({ params }: AppDetailProps) {
+  const { slug } = await params;
+  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+
+  if (!app) {
+    notFound();
+  }
+
+  return (
+    <>
+      <main className="min-h-screen bg-gray-100 dark:bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 flex flex-col gap-8">
+          <AppHero {...app} />
+        </div>
+      </main>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col gap-8">
+        <Links {...app} />
+      </div>
     </>
   );
 }

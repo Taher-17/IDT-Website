@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="top-0 left-0 z-50 w-full py-8">
-      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-4 sm:px-6">
+      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2 sm:px-6">
         {/* Brand */}
         <div className="flex items-center justify-between w-full sm:w-auto">
           <Link
@@ -69,6 +69,12 @@ export default function Navbar() {
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:space-x-8">
             <Link
+              href={`${externalAppsURL}`}
+              className="font-medium text-gray-700 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 transition"
+            >
+              Apps
+            </Link>
+            <Link
               href="/about"
               className="font-medium text-gray-700 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 transition"
             >
@@ -80,12 +86,6 @@ export default function Navbar() {
             >
               Blog
             </Link> */}
-            <Link
-              href={`${externalAppsURL}`}
-              className="font-medium text-gray-700 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 transition"
-            >
-              Apps
-            </Link>
             <a
               href={`mailto:${contactEmail}`}
               className="font-medium text-gray-700 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 transition"

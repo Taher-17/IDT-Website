@@ -9,7 +9,7 @@ interface FeaturedCardProps {
 
 export default function FeaturedCard({ item }: FeaturedCardProps) {
   return (
-    <a href={item.linkURL} target="_blank" rel="noopener noreferrer">
+    <a href={item.linkURL} rel="noopener noreferrer">
       <figure
         className="rounded-2xl ring-1 ring-gray-900/10 dark:ring-white/20 p-8 sm:p-10 text-sm sm:text-base transition-shadow duration-300 flex flex-col sm:flex-row gap-6"
         style={{ backgroundColor: "var(--background)" }}

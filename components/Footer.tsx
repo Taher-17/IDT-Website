@@ -6,7 +6,7 @@ import { contactEmail, tiktokURL, instagramURL } from "@/constants";
 
 export default function Footer() {
   return (
-    <footer className="py-8 pt-16">
+    <footer className="py-8 pt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         {/* Brand / Text */}
         <p className="text-gray-700 dark:text-gray-300 text-sm">
