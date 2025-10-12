@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "M88S6KSWX2.com.innovativedigitaltechnologies.Song-Cover"
+        ],
+        "components": [
+          {
+            "/": "/SongCover*"
+          }
+        ]
+      }
+    ]
+  }
+}
