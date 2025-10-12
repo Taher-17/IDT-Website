@@ -8,7 +8,7 @@ export default function HeroSection() {
         <br />
         and Solutions
       </h1>
-      <p className="mt-8 text-lg sm:text-xl text-gray-400 whitespace-pre-line">
+      <p className="mt-8 text-lg sm:text-xl text-gray-600 dark:text-gray-300">
         We design and build high-quality iOS apps and digital solutions that{" "}
         <br />
         empower businesses and users alike with the latest technology and AI

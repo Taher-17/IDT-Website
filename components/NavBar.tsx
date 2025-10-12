@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <header className="top-0 left-0 z-50 w-full py-8">
-      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-3 sm:px-6">
+      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-4 sm:px-6">
         {/* Brand */}
         <div className="flex items-center justify-between w-full sm:w-auto">
           <Link

@@ -10,7 +10,7 @@ export default function FeaturedSection() {
             <h1 className="text-4xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               Featured
             </h1>
-            <p className="text-lg sm:text-xl text-gray-400 pb-4 whitespace-pre-line">
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
               Our recently featured projects
             </p>
           </div>
