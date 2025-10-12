@@ -10,6 +10,28 @@ interface AppDetailProps {
   params: { slug: string };
 }
 
+export async function generateMetadata({ params }: AppDetailProps) {
+  const { slug } = params;
+  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+  if (!app) notFound();
+
+  return {
+    title: `${app.title} — Terms of Service`,
+    description: `Read the Terms of Service for ${app.title}, an iOS app by Innovative Digital Technologies.`,
+    openGraph: {
+      title: `${app.title} — Terms of Service`,
+      description: `Read the Terms of Service for ${app.title}, an iOS app by Innovative Digital Technologies.`,
+      url: `https://yourdomain.com/apps/${app.id}/terms`,
+      siteName: "Innovative Digital Technologies",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${app.title} — Terms of Service`,
+      description: `Read the Terms of Service for ${app.title}, an iOS app by Innovative Digital Technologies.`,
+    },
+  };
+}
+
 export default async function Terms({ params }: AppDetailProps) {
   const { slug } = params;
   const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());

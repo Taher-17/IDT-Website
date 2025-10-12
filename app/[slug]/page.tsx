@@ -100,6 +100,42 @@ function Links(app: AppItem) {
   );
 }
 
+export async function generateMetadata({ params }: AppDetailProps) {
+  const { slug } = params;
+  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+
+  if (!app) notFound();
+
+  const defaultKeywords = ["iOS apps", "Innovative Digital Technologies"];
+  const categoryKeywords = app.categories ?? [];
+  const tagKeywords = app.tags ?? [];
+  const keywords = [...defaultKeywords, ...categoryKeywords, ...tagKeywords];
+
+  return {
+    title: `${app.title} — App Details`,
+    description: app.description,
+    keywords,
+    authors: [{ name: "Innovative Digital Technologies" }],
+    publisher: "Innovative Digital Technologies",
+    openGraph: {
+      title: `${app.title} — App Details`,
+      description: app.description,
+      url: `https://innovativedigitaltechnologies.software/${app.path}`,
+      siteName: "Innovative Digital Technologies",
+      images: [{ url: app.iconURL, width: 512, height: 512, alt: app.title }],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${app.title} — App Details`,
+      description: app.description,
+      images: [app.iconURL],
+    },
+    robots: { index: true, follow: true },
+  };
+}
+
 export default async function AppDetailPage({ params }: AppDetailProps) {
   const { slug } = await params;
   const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());

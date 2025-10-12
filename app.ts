@@ -7,6 +7,8 @@ export interface AppItem {
   iconURL: string;
   heroURL: string;
   linkURL: string;
+  categories?: string[]; // e.g., ['Productivity', 'AI']
+  tags?: string[]; // e.g., ['notes', 'organizer', 'task manager']
 }
 
 export const apps: AppItem[] = [
@@ -22,5 +24,7 @@ export const apps: AppItem[] = [
       "https://www.appatar.io/com.innovativedigitaltechnologies.Polaroid-AI/large",
     heroURL: "/images/featured/polaroid-ai.jpg",
     linkURL: "https://apps.apple.com/app/id6448311065",
+    categories: ["Photography", "AI"],
+    tags: ["photos", "images", "AI", "polaroid"],
   },
 ];
