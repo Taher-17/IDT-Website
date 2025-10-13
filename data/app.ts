@@ -32,7 +32,7 @@ export const apps: AppItem[] = [
     categories: [],
     tags: [],
   }),
-  {
+  createAppItem({
     id: "1531442783",
     path: "MusicView",
     title: "MusicView",
@@ -41,12 +41,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.MusicView/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1531442783",
     categories: [],
     tags: [],
-  },
-  {
-    id: "MusicViewPro",
+  }),
+  createAppItem({
+    id: "6450147372",
     path: "MusicViewPro",
     title: "MusicView Pro",
     subtitle: "Interactive Music Widgets",
@@ -54,12 +53,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.MusicView-Pro/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6450147372",
     categories: [],
     tags: [],
-  },
-  {
-    id: "ControlBar",
+  }),
+  createAppItem({
+    id: "6459730205",
     path: "ControlBar",
     title: "ControlBar",
     subtitle: "Music Widget Control & Actions",
@@ -67,12 +65,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.ControlBar/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6459730205",
     categories: [],
     tags: [],
-  },
-  {
-    id: "FloatingPlayer",
+  }),
+  createAppItem({
+    id: "1601556396",
     path: "FloatingPlayer",
     title: "FloatingPlayer",
     subtitle: "Picture in Picture for Music",
@@ -80,12 +77,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.FloatingPlayer/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1601556396",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SocialStats",
+  }),
+  createAppItem({
+    id: "1533776006",
     path: "SocialStats",
     title: "Social Stats Widget",
     subtitle: "Social Media Profile Widgets",
@@ -93,12 +89,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.FollowersWidget/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1533776006",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SongSwipe",
+  }),
+  createAppItem({
+    id: "1625641475",
     path: "SongSwipe",
     title: "SongSwipe",
     subtitle: "Discover music, make playlists",
@@ -106,12 +101,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.SongSwipe/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1625641475",
     categories: [],
     tags: [],
-  },
-  {
-    id: "LockLauncher",
+  }),
+  createAppItem({
+    id: "1631920238",
     path: "LockLauncher",
     title: "LockLauncher",
     subtitle: "Lock Screen Widgets & Launcher",
@@ -119,12 +113,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.LockLauncher/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1631920238",
     categories: [],
     tags: [],
-  },
-  {
-    id: "RCReporting",
+  }),
+  createAppItem({
+    id: "1511127976",
     path: "RCReporting",
     title: "RCReporting",
     subtitle: "RevenueCat Client & Dashboard",
@@ -132,12 +125,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.rcreporting/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1511127976",
     categories: [],
     tags: [],
-  },
-  {
-    id: "TodayTab",
+  }),
+  createAppItem({
+    id: "1588593096",
     path: "TodayTab",
     title: "TodayTab",
     subtitle: "Customise your Safari Start Page",
@@ -145,12 +137,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.TodayTab/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1588593096",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SongList",
+  }),
+  createAppItem({
+    id: "1614122341",
     path: "SongList",
     title: "SongList",
     subtitle: "Listen Later - Songs & Albums",
@@ -158,12 +149,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.SongList/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1614122341",
     categories: [],
     tags: [],
-  },
-  {
-    id: "Applytics",
+  }),
+  createAppItem({
+    id: "1584323787",
     path: "Applytics",
     title: "Applytics",
     subtitle: "App Sales & Metrics Reporting",
@@ -171,12 +161,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.applytics/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1584323787",
     categories: [],
     tags: [],
-  },
-  {
-    id: "ContactsBot",
+  }),
+  createAppItem({
+    id: "1575124462",
     path: "ContactsBot",
     title: "ContactsBot",
     subtitle: "The powerful contacts app",
@@ -184,25 +173,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.ContactsBot/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1575124462",
     categories: [],
     tags: [],
-  },
-  {
-    id: "PriceManager",
-    path: "PriceManager",
-    title: "PriceManager",
-    subtitle: "Plan & Change your App Prices",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.pricemanager/large",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1564231812",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "SecurityKit",
+  }),
+  createAppItem({
+    id: "1548808907",
     path: "SecurityKit",
     title: "SecurityKit",
     subtitle: "Security tools for developers",
@@ -210,25 +185,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.SecurityKit/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1548808907",
     categories: [],
     tags: [],
-  },
-  {
-    id: "ReviewKit",
-    path: "ReviewKit",
-    title: "ReviewKit",
-    subtitle: "Track ratings and reviews",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.ReviewKit/large",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1546576718",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "StrengthBot",
+  }),
+  createAppItem({
+    id: "1566114294",
     path: "StrengthBot",
     title: "StrengthBot",
     subtitle: "Gym Strength Tracker & Manager",
@@ -236,51 +197,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.StrengthBot/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1566114294",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SalesBot",
-    path: "SalesBot",
-    title: "SalesBot for Appfigures",
-    subtitle: "Track sales, ads & downloads",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.SalesBot/large",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1540447424",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "LaunchWidgets",
-    path: "LaunchWidgets",
-    title: "Launch Widgets",
-    subtitle: "Quick widget actions",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.LaunchWidgets/large",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1540447424",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "CryptoDNS",
-    path: "CryptoDNS",
-    title: "CryptoDNS",
-    subtitle: "Stay safe and secure online",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.CryptoDNS/large",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1520888363",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "WallWidgets",
+  }),
+  createAppItem({
+    id: "1537880763",
     path: "WallWidgets",
     title: "- (Dash) Transparent",
     subtitle: "Transparent widgets & overlays",
@@ -288,25 +209,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is2-ssl.mzstatic.com/image/thumb/Purple124/v4/5a/ee/ea/5aeeeaba-1e23-2548-3c6c-d7e61d30787e/AppIcon-1x_U007emarketing-0-10-0-85-220.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1537880763",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SimpleWidgets",
-    path: "SimpleWidgets",
-    title: "SimpleWidgets",
-    subtitle: "Customise your home screen",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.SimpleWidgets/large",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1537880763",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "ColorBox",
+  }),
+  createAppItem({
+    id: "1471935296",
     path: "ColorBox",
     title: "Color Box",
     subtitle: "A simple fun game",
@@ -314,12 +221,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.ColorBox/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1471935296",
     categories: [],
     tags: [],
-  },
-  {
-    id: "RaindropWeather",
+  }),
+  createAppItem({
+    id: "1445374719",
     path: "RaindropWeather",
     title: "Raindrop Weather",
     subtitle: "A simple weather app",
@@ -327,12 +233,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.RaindropWeather/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1445374719",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AddOne",
+  }),
+  createAppItem({
+    id: "1441608877",
     path: "AddOne",
     title: "Add One",
     subtitle: "Challenge your concentration",
@@ -340,12 +245,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/1a/76/fc/1a76fce2-5572-cf63-0d95-9d5e6076a1bd/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1441608877",
     categories: [],
     tags: [],
-  },
-  {
-    id: "ColorJump",
+  }),
+  createAppItem({
+    id: "1335515793",
     path: "ColorJump",
     title: "Color Jump!",
     subtitle: "Simple and Addictive!",
@@ -353,25 +257,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/e0/2c/62/e02c6232-c94d-4d3c-3736-a5e9c9bc7a43/AppIcon-1x_U007emarketing-85-220-0-5.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1335515793",
     categories: [],
     tags: [],
-  },
-  {
-    id: "WebInspect",
-    path: "WebInspect",
-    title: "Web Inspect",
-    subtitle: "Great tool for web developers",
-    description: "",
-    iconURL:
-      "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/62/5f/be/625fbeea-8791-c0e0-4113-29850b40dc4e/AppIcon-1x_U007emarketing-85-220-0-5.png/460x0w.webp",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1333379507",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "ShadowConnect",
+  }),
+  createAppItem({
+    id: "1441410830",
     path: "ShadowConnect",
     title: "Shadow Connect",
     subtitle: "A Shadowsocks Client",
@@ -379,12 +269,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/57/14/c9/5714c9d5-c35e-5b55-a1b1-9688c9d3701c/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1441410830",
     categories: [],
     tags: [],
-  },
-  {
-    id: "NCEAStudy",
+  }),
+  createAppItem({
+    id: "1439282798",
     path: "NCEAStudy",
     title: "NCEA Study",
     subtitle: "NCEA Past Papers",
@@ -392,25 +281,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple112/v4/2c/5f/49/2c5f4956-d833-dc72-47aa-522b23b197f2/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1439282798",
     categories: [],
     tags: [],
-  },
-  {
-    id: "iSniffer",
-    path: "iSniffer",
-    title: "iSniffer",
-    subtitle: "View Network Requests",
-    description: "",
-    iconURL:
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/1f/4d/40/1f4d404d-ca4d-f721-9b32-5809490a697b/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/460x0w.webp",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1436431394",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "OpenTunnel",
+  }),
+  createAppItem({
+    id: "1410669066",
     path: "OpenTunnel",
     title: "OpenTunnel",
     subtitle: "An OpenVPN Client",
@@ -418,12 +293,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/4e/3d/53/4e3d5325-9624-c565-02d8-fe1d2bef00d9/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-10.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1410669066",
     categories: [],
     tags: [],
-  },
-  {
-    id: "iHost",
+  }),
+  createAppItem({
+    id: "1338576676",
     path: "iHost",
     title: "iHost - HTML Live",
     subtitle: "An essential for developers",
@@ -431,25 +305,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/ab/92/d1/ab92d17b-4e5b-0c75-7438-fa4b8aea9e91/AppIcon-1x_U007emarketing-85-220-0-9.png/460x0w.webp",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1338576676",
     categories: [],
     tags: [],
-  },
-  {
-    id: "StealthShield",
-    path: "StealthShield",
-    title: "Stealth Shield",
-    subtitle: "Unlimited Privacy & Security",
-    description: "",
-    iconURL:
-      "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/fd/45/84/fd4584ab-07a9-943f-43a8-0db569dc2dfd/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/460x0w.webp",
-    heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1358027922",
-    categories: [],
-    tags: [],
-  },
-  {
-    id: "AdView",
+  }),
+  createAppItem({
+    id: "1671710414",
     path: "AdView",
     title: "AdView",
     subtitle: "AdMob & AdSense earnings",
@@ -457,12 +317,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.adview/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id1671710414",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SongView",
+  }),
+  createAppItem({
+    id: "6447479401",
     path: "SongView",
     title: "SongView",
     subtitle: "Music Live Activities Widget",
@@ -470,12 +329,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.songview/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6447479401",
     categories: [],
     tags: [],
-  },
-  {
-    id: "IdeaLog",
+  }),
+  createAppItem({
+    id: "6447479401",
     path: "IdeaLog",
     title: "IdeaLog",
     subtitle: "Log, organise and manage your ideas",
@@ -483,12 +341,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.IdeaLog/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6447479401",
     categories: [],
     tags: [],
-  },
-  {
-    id: "HealthBot",
+  }),
+  createAppItem({
+    id: "6447813867",
     path: "HealthBot",
     title: "HealthBot",
     subtitle: "Smart Food Tracking",
@@ -496,12 +353,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.HealthBot/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6447813867",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIImage",
+  }),
+  createAppItem({
+    id: "6472991036",
     path: "AIImage",
     title: "AI Image",
     subtitle: "AI Image Generator",
@@ -509,12 +365,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Image/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6472991036",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIPhotoEnhancer",
+  }),
+  createAppItem({
+    id: "6473685152",
     path: "AIPhotoEnhancer",
     title: "AI Photo Enhancer",
     subtitle: "Create AI Image Variations",
@@ -522,12 +377,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Image-Enhancer/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6473685152",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIVoice",
+  }),
+  createAppItem({
+    id: "6473822623",
     path: "AIVoice",
     title: "AI Voice",
     subtitle: "Text to Speech with AI",
@@ -535,12 +389,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Voice/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6473822623",
     categories: [],
     tags: [],
-  },
-  {
-    id: "GoalTracker",
+  }),
+  createAppItem({
+    id: "6474997090",
     path: "GoalTracker",
     title: "Goal Tracker",
     subtitle: "Track and achieve your goals",
@@ -548,12 +401,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Goal-Tracker/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6474997090",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIEmail",
+  }),
+  createAppItem({
+    id: "6476844199",
     path: "AIEmail",
     title: "AI Email",
     subtitle: "Create emails with AI",
@@ -561,12 +413,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Email/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6476844199",
     categories: [],
     tags: [],
-  },
-  {
-    id: "GrammarCheck",
+  }),
+  createAppItem({
+    id: "6477149776",
     path: "GrammarCheck",
     title: "Grammar Check",
     subtitle: "AI Grammar Check",
@@ -574,12 +425,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Grammar-Check/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6477149776",
     categories: [],
     tags: [],
-  },
-  {
-    id: "QuitVaping",
+  }),
+  createAppItem({
+    id: "6477567025",
     path: "QuitVaping",
     title: "Quit Vaping",
     subtitle: "Quit Vaping Now!",
@@ -587,12 +437,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Quit-Vaping/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6477567025",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AILogo",
+  }),
+  createAppItem({
+    id: "6477750417",
     path: "AILogo",
     title: "AI Logo",
     subtitle: "AI Logo Generator",
@@ -600,12 +449,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Logo/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6477750417",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIWriter",
+  }),
+  createAppItem({
+    id: "6478188140",
     path: "AIWriter",
     title: "AI Writer",
     subtitle: "AI Writing Assistant",
@@ -613,12 +461,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Writer/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6478188140",
     categories: [],
     tags: [],
-  },
-  {
-    id: "VoiceGenerator",
+  }),
+  createAppItem({
+    id: "6478903277",
     path: "VoiceGenerator",
     title: "Voice Generator",
     subtitle: "AI Powered Voice Generation",
@@ -626,12 +473,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Voice-Generator/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6478903277",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIMusic",
+  }),
+  createAppItem({
+    id: "6480380935",
     path: "AIMusic",
     title: "AI Music",
     subtitle: "AI Powered Music Generation",
@@ -639,12 +485,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Music/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6480380935",
     categories: [],
     tags: [],
-  },
-  {
-    id: "SongCover",
+  }),
+  createAppItem({
+    id: "6502046156",
     path: "SongCover",
     title: "Song Cover",
     subtitle: "AI Generated Song Covers",
@@ -652,12 +497,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Song-Cover/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6502046156",
     categories: [],
     tags: [],
-  },
-  {
-    id: "CashGrid",
+  }),
+  createAppItem({
+    id: "6714471349",
     path: "CashGrid",
     title: "Cash Grid",
     subtitle: "A new way to track your savings",
@@ -665,12 +509,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.CashGrid/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6714471349",
     categories: [],
     tags: [],
-  },
-  {
-    id: "AIDesign",
+  }),
+  createAppItem({
+    id: "6737711207",
     path: "AIDesign",
     title: "AI Design",
     subtitle: "Your personal AI Designer",
@@ -678,12 +521,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Design/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6737711207",
     categories: [],
     tags: [],
-  },
-  {
-    id: "DogIdentifier",
+  }),
+  createAppItem({
+    id: "6739771702",
     path: "DogIdentifier",
     title: "Dog Identifier",
     subtitle: "Identify dogs in just a tap",
@@ -691,12 +533,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Dog-Identifier/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6739771702",
     categories: [],
     tags: [],
-  },
-  {
-    id: "CatIdentifier",
+  }),
+  createAppItem({
+    id: "6739974423",
     path: "CatIdentifier",
     title: "Cat Identifier",
     subtitle: "Identify cats in just a tap",
@@ -704,12 +545,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Cat-Identifier/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6739974423",
     categories: [],
     tags: [],
-  },
-  {
-    id: "InteriorDesign",
+  }),
+  createAppItem({
+    id: "6741510597",
     path: "InteriorDesign",
     title: "Interior Design",
     subtitle: "Design your dream home",
@@ -717,12 +557,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Interior-Design/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6741510597",
     categories: [],
     tags: [],
-  },
-  {
-    id: "ToonKit",
+  }),
+  createAppItem({
+    id: "6743953933",
     path: "ToonKit",
     title: "Cartoon Image: ToonKit",
     subtitle: "Cartoonify any image",
@@ -730,12 +569,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Cartoon-Image/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6743953933",
     categories: [],
     tags: [],
-  },
-  {
-    id: "VibeShift",
+  }),
+  createAppItem({
+    id: "6746059887",
     path: "VibeShift",
     title: "VibeShift",
     subtitle: "Switch up your vibe",
@@ -743,12 +581,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.VibeShift/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6746059887",
     categories: [],
     tags: [],
-  },
-  {
-    id: "VidSum",
+  }),
+  createAppItem({
+    id: "6746120652",
     path: "VidSum",
     title: "VidSum",
     subtitle: "Summarize Videos",
@@ -756,12 +593,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.VidSum/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6746120652",
     categories: [],
     tags: [],
-  },
-  {
-    id: "JustBookIt",
+  }),
+  createAppItem({
+    id: "6744641144",
     path: "JustBookIt",
     title: "JustBookIt",
     subtitle: "Plan your dream holiday in seconds",
@@ -769,12 +605,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.JustBookIt/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6744641144",
     categories: [],
     tags: [],
-  },
-  {
-    id: "Optrix",
+  }),
+  createAppItem({
+    id: "6746662820",
     path: "Optrix",
     title: "Optrix",
     subtitle: "Professional headshots in seconds",
@@ -782,12 +617,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Optrix/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6746662820",
     categories: [],
     tags: [],
-  },
-  {
-    id: "CampaignManager",
+  }),
+  createAppItem({
+    id: "6749494534",
     path: "CampaignManager",
     title: "Campaign Manager",
     subtitle: "Manage your App Ad Campaigns",
@@ -795,10 +629,9 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.CampaignManager/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6749494534",
     categories: [],
     tags: [],
-  },
+  }),
   createAppItem({
     id: "6749884844",
     path: "BeardFilter",
