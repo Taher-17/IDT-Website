@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { apps } from "@/app";
-import { contactEmail } from "@/constants";
+import { apps } from "@/data/app";
+import { contactEmail } from "@/data/constants";
 import Markdown from "@/components/Markdown";
 
 interface AppDetailProps {
@@ -11,8 +11,8 @@ interface AppDetailProps {
 }
 
 export async function generateMetadata({ params }: AppDetailProps) {
-  const { slug } = params;
-  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+  const { slug } = await params;
+  const app = apps.find((a) => a.path.toLowerCase() === slug.toLowerCase());
   if (!app) notFound();
 
   return {
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: AppDetailProps) {
     openGraph: {
       title: `${app.title} — Terms of Service`,
       description: `Read the Terms of Service for ${app.title}, an iOS app by Innovative Digital Technologies.`,
-      url: `https://yourdomain.com/apps/${app.id}/terms`,
+      url: `https://innovativedigitaltechnologies.software/${app.path}/terms`,
       siteName: "Innovative Digital Technologies",
     },
     twitter: {
@@ -34,11 +34,11 @@ export async function generateMetadata({ params }: AppDetailProps) {
 
 export default async function Terms({ params }: AppDetailProps) {
   const { slug } = params;
-  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+  const app = apps.find((a) => a.path.toLowerCase() === slug.toLowerCase());
 
   if (!app) notFound();
 
-  const filePath = path.join(process.cwd(), "content", app.id, "terms.md");
+  const filePath = path.join(process.cwd(), "content", app.path, "terms.md");
   if (!fs.existsSync(filePath)) notFound();
 
   const fileContent = fs.readFileSync(filePath, "utf8");

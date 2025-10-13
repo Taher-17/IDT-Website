@@ -2,7 +2,7 @@
 
 import { FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
-import { contactEmail, tiktokURL, instagramURL } from "@/constants";
+import { contactEmail, tiktokURL, instagramURL } from "@/data/constants";
 
 export default function Footer() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FeaturedItem } from "../featured";
+import { FeaturedItem } from "../types/FeaturedItem";
 
 interface FeaturedCardProps {
   item: FeaturedItem;

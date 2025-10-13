@@ -1,19 +1,27 @@
-export interface AppItem {
-  id: string;
-  path: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  iconURL: string;
-  heroURL: string;
-  linkURL: string;
-  categories?: string[]; // e.g., ['Productivity', 'AI']
-  tags?: string[]; // e.g., ['notes', 'organizer', 'task manager']
+import { AppItem } from "../types/AppItem";
+
+function createAppItem(
+  item: Partial<AppItem> & {
+    id: string;
+    path: string;
+    title: string;
+    subtitle: string;
+    description: string;
+    iconURL: string;
+    heroURL: string;
+  }
+): AppItem {
+  return {
+    ...item,
+    linkURL: item.linkURL ?? `https://apps.apple.com/app/id${item.id}`,
+    categories: item.categories,
+    tags: item.tags,
+  };
 }
 
 export const apps: AppItem[] = [
-  {
-    id: "ActivityBuilder",
+  createAppItem({
+    id: "6443593416",
     path: "ActivityBuilder",
     title: "ActivityBuilder",
     subtitle: "Customise your Lock Screen",
@@ -21,12 +29,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.ActivityBuilder/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6443593416",
     categories: [],
     tags: [],
-  },
+  }),
   {
-    id: "MusicView",
+    id: "1531442783",
     path: "MusicView",
     title: "MusicView",
     subtitle: "Spotify and Music Widget",
@@ -792,8 +799,8 @@ export const apps: AppItem[] = [
     categories: [],
     tags: [],
   },
-  {
-    id: "beardfilter",
+  createAppItem({
+    id: "6749884844",
     path: "BeardFilter",
     title: "Beard Filter",
     subtitle: "Customize your look",
@@ -801,12 +808,11 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Beard-Filter/large",
     heroURL: "",
-    linkURL: "https://apps.apple.com/app/id6749884844",
     categories: [],
     tags: [],
-  },
-  {
-    id: "unblur",
+  }),
+  createAppItem({
+    id: "6749494534",
     path: "Unblur",
     title: "Unblur",
     subtitle: "Unblur, restore and improve images",
@@ -816,12 +822,11 @@ export const apps: AppItem[] = [
       "https://www.appatar.io/com.innovativedigitaltechnologies.Unblur/large",
     heroURL:
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/dc/a4/93dca410-d159-3de9-f23f-a822f97eeb46/Frame_1.png/460x0w.webp",
-    linkURL: "https://apps.apple.com/app/id6749494534",
     categories: ["Photography", "AI"],
     tags: ["photos", "images", "AI", "restore", "sharpen", "enhance", "remini"],
-  },
-  {
-    id: "polaroidai",
+  }),
+  createAppItem({
+    id: "6752937087",
     path: "PolaroidAI",
     title: "Polaroid AI",
     subtitle:
@@ -831,7 +836,6 @@ export const apps: AppItem[] = [
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Polaroid-AI/large",
     heroURL: "/images/featured/polaroid-ai.jpg",
-    linkURL: "https://apps.apple.com/app/id6752937087",
     categories: ["Photography", "AI"],
     tags: [
       "photos",
@@ -842,5 +846,5 @@ export const apps: AppItem[] = [
       "celebrity",
       "trend",
     ],
-  },
+  }),
 ];

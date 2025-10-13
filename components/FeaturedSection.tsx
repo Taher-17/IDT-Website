@@ -1,5 +1,5 @@
 import FeaturedCard from "@/components/FeaturedCard";
-import { featuredItems } from "@/featured";
+import { featuredItems } from "@/data/featured";
 
 export default function FeaturedSection() {
   return (

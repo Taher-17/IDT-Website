@@ -1,19 +1,42 @@
 import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+import { ActivityBuilderConfig, Offer } from "@/types/ActivityBuilderConfig";
+import {
+  DefaultPaywallConfig,
+  DefaultAdConfig,
+  AILogoOffer,
+  AIWriterOffer,
+} from "@/data/activitybuildercontent";
 
-// Sample data
-const apps = [
-  { slug: "myapp", name: "My App", description: "App 1" },
-  { slug: "anotherapp", name: "Another App", description: "App 2" },
-];
+const ActivityBuilderBaseConfig: ActivityBuilderConfig = {
+  adConfig: DefaultAdConfig,
+  paywallConfig: { ...DefaultPaywallConfig },
+};
 
-// GET request handler
-export async function GET() {
-  return NextResponse.json(apps);
+function getActivityBuilderConfig(headers: Record<string, string>) {
+  const countryCode = headers["x-country-code"];
+  const launchCount = headers["x-launch-count"];
+  const transactionID = headers["x-transaction-id"];
+
+  const result: ActivityBuilderConfig = structuredClone(
+    ActivityBuilderBaseConfig
+  );
+
+  const offers: Offer[] = [AILogoOffer, AIWriterOffer];
+  const randomElement = offers[Math.floor(Math.random() * offers.length)];
+  result.paywallConfig.offer = randomElement;
+
+  return result;
 }
 
-// POST request handler (optional)
-export async function POST(req: Request) {
-  const data = await req.json();
-  // You could save to a DB here
-  return NextResponse.json({ message: "Received", data });
+export async function GET(request: NextRequest) {
+  const clientNameHeader = request.headers.get("client-name");
+
+  if (clientNameHeader === "ActivityBuilder") {
+    const headers = Object.fromEntries(request.headers.entries());
+    const config = getActivityBuilderConfig(headers);
+    return NextResponse.json(config, { status: 200 });
+  }
+
+  return NextResponse.json({ errorCode: "INVALID_CLIENT" }, { status: 401 });
 }

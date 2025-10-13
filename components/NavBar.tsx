@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { contactEmail, externalAppsURL } from "../constants";
+import { contactEmail, externalAppsURL } from "../data/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

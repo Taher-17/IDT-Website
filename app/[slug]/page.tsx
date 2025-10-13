@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
-import { apps, AppItem } from "@/app";
-import { contactEmail } from "@/constants";
+import { apps } from "@/data/app";
+import { AppItem } from "@/types/AppItem";
+import { contactEmail } from "@/data/constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -101,8 +102,8 @@ function Links(app: AppItem) {
 }
 
 export async function generateMetadata({ params }: AppDetailProps) {
-  const { slug } = params;
-  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+  const { slug } = await params;
+  const app = apps.find((a) => a.path.toLowerCase() === slug.toLowerCase());
 
   if (!app) notFound();
 
@@ -138,7 +139,7 @@ export async function generateMetadata({ params }: AppDetailProps) {
 
 export default async function AppDetailPage({ params }: AppDetailProps) {
   const { slug } = await params;
-  const app = apps.find((a) => a.id.toLowerCase() === slug.toLowerCase());
+  const app = apps.find((a) => a.path.toLowerCase() === slug.toLowerCase());
 
   if (!app) {
     notFound();

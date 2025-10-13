@@ -1,4 +1,4 @@
-import { contactEmail, externalAppsURL } from "../constants";
+import { contactEmail, externalAppsURL } from "../data/constants";
 
 export default function HeroSection() {
   return (
