@@ -34,7 +34,6 @@ module.exports = {
       lastmod: new Date(blog.updatedAt || Date.now()).toISOString(),
     }));
 
-    // Combine apps + blogs
     return [...appPaths, ...blogPaths];
   },
 };
