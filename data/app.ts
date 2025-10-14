@@ -1,4 +1,5 @@
-import { AppItem } from "../types/AppItem";
+import { AppFeature } from "@/types/AppFeature";
+import { AppItem } from "@/types/AppItem";
 
 function createAppItem(
   item: Partial<AppItem> & {
@@ -16,6 +17,13 @@ function createAppItem(
     linkURL: item.linkURL ?? `https://apps.apple.com/app/id${item.id}`,
     categories: item.categories,
     tags: item.tags,
+  };
+}
+
+function createFeature(title: string, description: string): AppFeature {
+  return {
+    title: title,
+    description: description,
   };
 }
 
@@ -679,5 +687,6 @@ export const apps: AppItem[] = [
       "celebrity",
       "trend",
     ],
+    features: [],
   }),
 ];

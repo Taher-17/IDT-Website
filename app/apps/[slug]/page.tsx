@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { apps } from "@/data/app";
 import { AppItem } from "@/types/AppItem";
+import { AppFeature } from "@/types/AppFeature";
 import { contactEmail } from "@/data/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,46 +10,63 @@ interface AppDetailProps {
   params: { slug: string };
 }
 
+// import Image from "next/image";
+// import Link from "next/link";
+// import { motion } from "framer-motion";
+// import { AppItem } from "@/app/types";
+
 function AppHero(app: AppItem) {
   return (
-    <div className="flex flex-col items-center text-center gap-6 sm:gap-8">
-      {/* App Icon */}
-      <Image
-        src={app.iconURL}
-        alt={`${app.title} Icon`}
-        width={120}
-        height={120}
-        className="rounded-3xl"
-      />
+    <section className="relative overflow-hidden py-4 sm:py-8">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT — Icon, title, subtitle, button */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+            <Image
+              src={app.iconURL}
+              alt={`${app.title} Icon`}
+              width={120}
+              height={120}
+              className="rounded-3xl shadow-lg mb-6"
+            />
 
-      {/* App Info */}
-      <div className="flex flex-col items-center text-center max-w-2xl">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
-          {app.title}
-        </h1>
+            <div>
+              <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-2">
+                {app.title}
+              </h1>
 
-        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-          {app.subtitle}
-        </p>
+              <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                {app.subtitle}
+              </p>
 
-        <Image
-          src={app.heroURL}
-          alt="Download on the App Store"
-          width={1920}
-          height={1080}
-          className="object-contain w-full h-auto rounded-xl m-4"
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        />
+              {app.description && (
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                  {app.description}
+                </p>
+              )}
+            </div>
+
+            <DownloadButton {...app} />
+          </div>
+
+          {/* RIGHT — Hero image */}
+          {app.heroURL && (
+            <div className="relative">
+              <Image
+                src={app.heroURL}
+                alt={`${app.title} Preview`}
+                width={1000}
+                height={800}
+                className="rounded-2xl object-cover w-full"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
+            </div>
+          )}
+        </div>
+        {app.features && FeatureCards(app.features)}
       </div>
-
-      <div>
-        <DownloadButton {...app} />
-      </div>
-
-      <p className="text-base text-m text-gray-600 dark:text-gray-300 leading-relaxed pt-4">
-        {app.description}
-      </p>
-    </div>
+    </section>
   );
 }
 
@@ -58,46 +76,48 @@ function DownloadButton(app: AppItem) {
       href={app.linkURL}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block"
+      className="inline-block mt-6"
     >
       {/* Light mode badge */}
       <Image
         src="/images/AppStoreBadge-White.svg"
         alt="Download on the App Store"
-        width={140}
-        height={48}
+        width={160}
+        height={54}
         className="block dark:hidden"
       />
       {/* Dark mode badge */}
       <Image
         src="/images/AppStoreBadge-Black.svg"
         alt="Download on the App Store"
-        width={140}
-        height={48}
+        width={160}
+        height={54}
         className="hidden dark:block"
       />
     </a>
   );
 }
 
-function Links(app: AppItem) {
+function FeatureCards(features: AppFeature[]) {
   return (
-    <>
-      <div className="flex flex-col sm:flex-row gap-4 text-gray-600 dark:text-gray-400 text-sm mt-12">
-        <Link href={`${app.path}/privacypolicy`} className="hover:underline">
-          Privacy Policy
-        </Link>
-        <Link href={`${app.path}/terms`} className="hover:underline">
-          Terms of Service
-        </Link>
-        <a
-          href={`mailto:${contactEmail}?subject=${app.title}`}
-          className="hover:underline"
+    <div className="mt-16 mb-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {features.map((f) => (
+        <figure
+          className="rounded-2xl ring-1 ring-gray-900/10 dark:ring-white/20 p-6 text-sm sm:text-base flex flex-col sm:flex-row gap-6"
+          style={{ backgroundColor: "var(--background)" }}
+          key={f.title}
         >
-          Support
-        </a>
-      </div>
-    </>
+          <div>
+            <h3 className="font-semibold text-gray-900 dark:text-white text-lg mb-2">
+              {f.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
+              {f.description}
+            </p>
+          </div>
+        </figure>
+      ))}
+    </div>
   );
 }
 
@@ -153,7 +173,7 @@ export default async function AppDetailPage({ params }: AppDetailProps) {
         </div>
       </main>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col gap-8">
-        <Links {...app} />
+        {/* <Links {...app} /> */}
       </div>
     </>
   );

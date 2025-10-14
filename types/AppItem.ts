@@ -1,3 +1,5 @@
+import { AppFeature } from "./AppFeature";
+
 export interface AppItem {
   id: string;
   path: string;
@@ -9,4 +11,5 @@ export interface AppItem {
   linkURL?: string;
   categories?: string[];
   tags?: string[];
+  features?: AppFeature[];
 }
