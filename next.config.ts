@@ -1,6 +1,16 @@
 import type { NextConfig } from "next";
+import { apps } from "@/data/app";
+
+const redirects = apps.map((app) => ({
+  source: `/${app.path}/:path*`,
+  destination: `/apps/${app.path}/:path*`,
+  permanent: true,
+}));
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return redirects;
+  },
   images: {
     remotePatterns: [
       {
