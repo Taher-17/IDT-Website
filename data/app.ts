@@ -686,6 +686,7 @@ export const apps: AppItem[] = [
       "gemini",
       "celebrity",
       "trend",
+      "meme",
     ],
     features: [],
   }),
