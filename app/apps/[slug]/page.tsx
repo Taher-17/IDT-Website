@@ -10,16 +10,11 @@ interface AppDetailProps {
   params: { slug: string };
 }
 
-// import Image from "next/image";
-// import Link from "next/link";
-// import { motion } from "framer-motion";
-// import { AppItem } from "@/app/types";
-
 function AppHero(app: AppItem) {
   return (
     <section className="relative overflow-hidden py-4 sm:py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-top">
           {/* LEFT — Icon, title, subtitle, button */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
             <Image
@@ -45,6 +40,8 @@ function AppHero(app: AppItem) {
                 </p>
               )}
             </div>
+
+            <Links {...app} />
 
             <DownloadButton {...app} />
           </div>
@@ -118,6 +115,27 @@ function FeatureCards(features: AppFeature[]) {
         </figure>
       ))}
     </div>
+  );
+}
+
+function Links(app: AppItem) {
+  return (
+    <>
+      <div className="flex gap-4 text-gray-600 dark:text-gray-400 text-sm">
+        <Link href={`/${app.path}/privacypolicy`} className="hover:underline">
+          Privacy Policy
+        </Link>
+        <Link href={`${app.path}/terms`} className="hover:underline">
+          Terms of Service
+        </Link>
+        <a
+          href={`mailto:${contactEmail}?subject=${app.title}`}
+          className="hover:underline"
+        >
+          Support
+        </a>
+      </div>
+    </>
   );
 }
 
