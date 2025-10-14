@@ -7,9 +7,9 @@ export default function FeaturedSection() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6">
         <section className="max-w-7xl mx-auto flex flex-col gap-8 py-16">
           <div>
-            <h1 className="text-4xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            <h2 className="text-4xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               Featured
-            </h1>
+            </h2>
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
               Our recently featured projects
             </p>
