@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: AppDetailProps) {
 }
 
 export default async function PrivacyPolicy({ params }: AppDetailProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const app = apps.find((a) => a.path.toLowerCase() === slug.toLowerCase());
 
   if (!app) notFound();
