@@ -11,16 +11,30 @@ module.exports = {
     };
   },
   additionalPaths: async (config) => {
+    // Fetch all apps
     const apps = await fetch(
       "https://innovativedigitaltechnologies.software/api/v1/apps"
-    ) // fetch all app IDs
-      .then((res) => res.json());
+    ).then((res) => res.json());
 
-    return apps.map((app) => ({
+    const appPaths = apps.map((app) => ({
       loc: `/apps/${app.path}`,
-      changefreq: "daily",
+      changefreq: "weekly",
       priority: 0.8,
       lastmod: new Date().toISOString(),
     }));
+
+    const blogs = await fetch(
+      "https://innovativedigitaltechnologies.software/api/v1/blog"
+    ).then((res) => res.json());
+
+    const blogPaths = blogs.map((blog) => ({
+      loc: `/blog/${blog.id}`,
+      changefreq: "weekly",
+      priority: 0.7,
+      lastmod: new Date(blog.updatedAt || Date.now()).toISOString(),
+    }));
+
+    // Combine apps + blogs
+    return [...appPaths, ...blogPaths];
   },
 };
