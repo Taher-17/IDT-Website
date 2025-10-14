@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://innovativedigitaltechnologies.software
+
+# Sitemaps
+Sitemap: https://innovativedigitaltechnologies.software/sitemap.xml
