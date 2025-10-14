@@ -77,7 +77,7 @@ function DownloadButton(app: AppItem) {
     >
       {/* Light mode badge */}
       <Image
-        src="/images/AppStoreBadge-White.svg"
+        src="/images/AppStoreBadge-white.svg"
         alt="Download on the App Store"
         width={160}
         height={54}
@@ -85,7 +85,7 @@ function DownloadButton(app: AppItem) {
       />
       {/* Dark mode badge */}
       <Image
-        src="/images/AppStoreBadge-Black.svg"
+        src="/images/AppStoreBadge-black.svg"
         alt="Download on the App Store"
         width={160}
         height={54}
