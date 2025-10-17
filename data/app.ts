@@ -634,7 +634,8 @@ export const apps: AppItem[] = [
       "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Optrix/large",
-    heroURL: "",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/8a/ad/0b8aad34-60a5-c70c-68ea-616976ff495d/Frame_1.png/460x0w.webp",
     categories: [],
     tags: [
       "AI",
