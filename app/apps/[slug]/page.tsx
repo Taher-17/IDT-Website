@@ -148,21 +148,28 @@ export async function generateMetadata({ params }: AppDetailProps) {
 
   if (!app) notFound();
 
-  const defaultKeywords = ["iOS apps", "Innovative Digital Technologies"];
+  const defaultKeywords = [
+    "AI apps",
+    "iOS apps",
+    "Innovative Digital Technologies",
+    app.title,
+    app.metadata.title,
+    "App Store",
+  ];
   const categoryKeywords = app.categories ?? [];
   const tagKeywords = app.tags ?? [];
   const keywords = [...defaultKeywords, ...categoryKeywords, ...tagKeywords];
 
   return {
-    title: `${app.title} — App Details`,
-    description: app.description,
+    title: app.metadata.title,
+    description: app.metadata.description,
     keywords,
     authors: [{ name: "Innovative Digital Technologies" }],
     publisher: "Innovative Digital Technologies",
     openGraph: {
-      title: `${app.title} — App Details`,
-      description: app.description,
-      url: `https://innovativedigitaltechnologies.software/${app.path}`,
+      title: app.metadata.title,
+      description: app.metadata.description,
+      url: `https://innovativedigitaltechnologies.software/apps/${app.path}`,
       siteName: "Innovative Digital Technologies",
       images: [{ url: app.iconURL, width: 512, height: 512, alt: app.title }],
       locale: "en_US",
@@ -170,11 +177,36 @@ export async function generateMetadata({ params }: AppDetailProps) {
     },
     twitter: {
       card: "summary_large_image",
-      title: `${app.title} — App Details`,
-      description: app.description,
+      title: app.metadata.title,
+      description: app.metadata.description,
       images: [app.iconURL],
     },
     robots: { index: true, follow: true },
+    alternates: {
+      canonical: `https://innovativedigitaltechnologies.software/apps/${app.path}`,
+    },
+    other: {
+      "application/ld+json": JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: app.title,
+        operatingSystem: "iOS",
+        applicationCategory: app.metadata.category,
+        description: app.metadata.description,
+        image: app.iconURL,
+        publisher: {
+          "@type": "Organization",
+          name: "Innovative Digital Technologies",
+          url: "https://innovativedigitaltechnologies.software",
+        },
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          url: `https://apps.apple.com/app/id${app.id}`,
+        },
+      }),
+    },
   };
 }
 

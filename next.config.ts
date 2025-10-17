@@ -1,11 +1,23 @@
 import type { NextConfig } from "next";
 import { apps } from "@/data/app";
 
-const redirects = apps.map((app) => ({
-  source: `/${app.path}/:path*`,
-  destination: `/apps/${app.path}/:path*`,
-  permanent: true,
-}));
+const redirects = apps.flatMap((app) => {
+  // Default redirect from /AppName to /apps/AppName
+  const defaultRedirect = {
+    source: `/${app.path}/:path*`,
+    destination: `/apps/${app.path}/:path*`,
+    permanent: true,
+  };
+
+  // SEO-friendly aliases based on metadata.aliases
+  const aliasRedirects = (app.metadata.aliases || []).map((alias) => ({
+    source: `/${alias}`,
+    destination: `/apps/${app.path}`,
+    permanent: true,
+  }));
+
+  return [defaultRedirect, ...aliasRedirects];
+});
 
 const nextConfig: NextConfig = {
   async redirects() {

@@ -1,5 +1,5 @@
 import { AppFeature } from "@/types/AppFeature";
-import { AppItem } from "@/types/AppItem";
+import { AppItem, AppMetadata } from "@/types/AppItem";
 
 function createAppItem(
   item: Partial<AppItem> & {
@@ -10,6 +10,7 @@ function createAppItem(
     description: string;
     iconURL: string;
     heroURL: string;
+    metadata?: AppMetadata;
   }
 ): AppItem {
   return {
@@ -17,6 +18,11 @@ function createAppItem(
     linkURL: item.linkURL ?? `https://apps.apple.com/app/id${item.id}`,
     categories: item.categories,
     tags: item.tags,
+    metadata: item.metadata ?? {
+      title: item.title,
+      description: item.description,
+      category: "Application",
+    },
   };
 }
 
@@ -622,14 +628,47 @@ export const apps: AppItem[] = [
   createAppItem({
     id: "6746662820",
     path: "Optrix",
-    title: "Optrix",
-    subtitle: "Professional headshots in seconds",
-    description: "",
+    title: "AI Headshot Generator for Professional Profiles",
+    subtitle: "Trusted by Professionals",
+    description:
+      "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Optrix/large",
     heroURL: "",
     categories: [],
-    tags: [],
+    tags: [
+      "AI",
+      "Headshots",
+      "Professional Photos",
+      "LinkedIn",
+      "Profile Picture",
+    ],
+    features: [
+      createFeature(
+        "Why Choose Optrix - The Smarter AI Headshot Generator",
+        "From LinkedIn profiles to corporate bios, Optrix delivers professional AI headshots that look real, polished, and ready to impress."
+      ),
+      createFeature(
+        "How Optrix Creates Studio-Quality AI Headshots",
+        "Upload your selfies, choose your style, and let our AI generate realistic professional portraits — no cameras, studios, or photographers needed."
+      ),
+      createFeature(
+        "Get Realistic AI Headshots in Seconds",
+        "Our advanced AI models deliver lifelike lighting, sharp details, and natural facial features — all within minutes."
+      ),
+      createFeature(
+        "Trusted by Thousands of Professionals Worldwide",
+        "From entrepreneurs to recruiters, Optrix is the go-to AI headshot generator for creating premium-quality portraits that stand out."
+      ),
+    ],
+    metadata: {
+      title:
+        "AI Headshot Generator | Professional Headshots in Seconds - Optrix",
+      description:
+        "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
+      category: "PhotographyApplication",
+      aliases: ["ai-headshot-generator", "professional-headshots"],
+    },
   }),
   createAppItem({
     id: "6749494534",
@@ -658,39 +697,118 @@ export const apps: AppItem[] = [
   createAppItem({
     id: "6752533857",
     path: "Unblur",
-    title: "Unblur",
-    subtitle: "Unblur, restore and improve images",
+    title: "Unblur – AI Photo Enhancer",
+    subtitle: "Restore, Sharpen, and Enhance Your Images",
     description:
-      "Unblur - Enhance and Sharpen Your Photos with AI Unblur is an advanced AI-powered photo enhancement app designed to bring clarity and detail back to your blurry images. Whether it's a cherished memory or a professional shot, Unblur helps you restore and enhance your photos effortlessly.",
+      "Unblur is an AI-powered photo enhancer that restores clarity, sharpens details, and improves image quality instantly. Perfect for old photos, professional shots, or everyday memories.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Unblur/large",
     heroURL:
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/dc/a4/93dca410-d159-3de9-f23f-a822f97eeb46/Frame_1.png/460x0w.webp",
     categories: ["Photography", "AI"],
-    tags: ["photos", "images", "AI", "restore", "sharpen", "enhance", "remini"],
+    tags: [
+      "AI",
+      "photo enhancement",
+      "image restoration",
+      "sharpen",
+      "Unblur",
+      "enhance",
+      "Remini",
+      "photos",
+    ],
+    features: [
+      createFeature(
+        "Restore Blurry Photos Instantly",
+        "Using advanced AI, Unblur brings your old, blurry, or low-quality photos back to life with enhanced clarity and detail."
+      ),
+      createFeature(
+        "Sharpen and Enhance Images",
+        "Improve the sharpness, texture, and quality of any photo — perfect for social media, work, or personal memories."
+      ),
+      createFeature(
+        "AI-Powered Smart Enhancement",
+        "Unblur intelligently detects areas that need improvement, preserving natural details while removing blur or noise."
+      ),
+      createFeature(
+        "Easy and Fast",
+        "Simply upload a photo and let Unblur do the work — no manual editing or technical skills required."
+      ),
+      createFeature(
+        "Perfect for Professionals and Memories",
+        "Enhance product shots, professional images, or cherished personal photos effortlessly with AI technology."
+      ),
+    ],
+    metadata: {
+      title: "Unblur – AI Photo Enhancer | Restore, Sharpen & Enhance Images",
+      description:
+        "Unblur is an AI-powered app that restores clarity, sharpens details, and enhances photo quality instantly. Perfect for old, blurry, or low-quality photos, professional shots, and social media images.",
+      category: "Photography",
+      aliases: [
+        "ai-photo-enhancer",
+        "photo-restoration",
+        "image-enhancer",
+        "unblur-images",
+        "sharpen-photos",
+      ],
+    },
   }),
   createAppItem({
     id: "6752937087",
     path: "PolaroidAI",
-    title: "Polaroid AI",
+    title: "Polaroid AI – Turn Memories Into Timeless Polaroids",
     subtitle:
-      "Create polaroid-style images with friends, family or celebrities",
+      "Create Polaroid-Style Images with Friends, Family, or Celebrities",
     description:
-      "Polaroid AI - Create Custom Polaroids with Anyone Turn memories into timeless keepsakes with Polaroid AI. Whether it's you, your friends, or even your favorite celebrities, bring moments to life in the iconic polaroid style.",
+      "Polaroid AI is an AI-powered photo app that transforms your photos into classic Polaroid-style keepsakes. Capture friends, family, or even celebrities, and bring moments to life in a timeless instant-photo format.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Polaroid-AI/large",
     heroURL: "/images/featured/polaroid-ai.jpg",
     categories: ["Photography", "AI"],
     tags: [
-      "photos",
-      "images",
       "AI",
-      "polaroid",
-      "gemini",
-      "celebrity",
-      "trend",
-      "meme",
+      "Polaroid",
+      "Photo Editing",
+      "Image Enhancement",
+      "Instant Photos",
+      "Memories",
+      "Celebrity Photos",
+      "Creative AI",
+      "Photo Trends",
+      "Meme",
     ],
-    features: [],
+    features: [
+      createFeature(
+        "Transform Your Photos Into Classic Polaroids",
+        "Polaroid AI recreates the distinctive style, colors, and borders of instant Polaroid photos, giving your images a nostalgic look."
+      ),
+      createFeature(
+        "AI-Powered Customization",
+        "Upload any photo — of friends, family, or celebrities — and let our AI generate authentic Polaroid-style images instantly."
+      ),
+      createFeature(
+        "Multiple Styles & Filters",
+        "Choose from a variety of Polaroid styles, vintage filters, and modern effects to make your images truly unique."
+      ),
+      createFeature(
+        "Easy to Share and Save",
+        "Download your AI-generated Polaroids in high resolution or share directly to social media platforms like Instagram, Threads, or TikTok."
+      ),
+      createFeature(
+        "Perfect for Fun or Keepsakes",
+        "Whether it’s creating memes, celebrating memories, or making gifts, Polaroid AI makes every photo special."
+      ),
+    ],
+    metadata: {
+      title: "Polaroid AI – AI Polaroid Photo Generator | Creative Memories",
+      description:
+        "Polaroid AI turns your photos into classic Polaroid-style keepsakes using AI. Capture friends, family, or celebrities and create timeless, shareable images instantly.",
+      category: "Photography",
+      aliases: [
+        "ai-polaroid-generator",
+        "polaroid-photo-app",
+        "polaroid-ai-images",
+        "instant-polaroid-photos",
+      ],
+    },
   }),
 ];

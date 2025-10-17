@@ -1,5 +1,12 @@
 import { AppFeature } from "./AppFeature";
 
+export interface AppMetadata {
+  title: string;
+  description: string;
+  category: string;
+  aliases?: string[];
+}
+
 export interface AppItem {
   id: string;
   path: string;
@@ -12,4 +19,5 @@ export interface AppItem {
   categories?: string[];
   tags?: string[];
   features?: AppFeature[];
+  metadata: AppMetadata;
 }
