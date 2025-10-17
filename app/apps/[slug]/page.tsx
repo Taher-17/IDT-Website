@@ -12,20 +12,20 @@ interface AppDetailProps {
 
 function AppHero(app: AppItem) {
   return (
-    <section className="relative overflow-hidden py-4 sm:py-8">
+    <section className="relative overflow-hidden py-8 sm:py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-top">
-          {/* LEFT — Icon, title, subtitle, button */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          {/* LEFT — Icon, title, subtitle, buttons */}
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-4">
             <Image
               src={app.iconURL}
               alt={`${app.title} Icon`}
               width={120}
               height={120}
-              className="rounded-3xl shadow-lg mb-6"
+              className="rounded-3xl shadow-lg"
             />
 
-            <div>
+            <div className="mt-4 lg:mt-0">
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-2">
                 {app.title}
               </h1>
@@ -41,26 +41,29 @@ function AppHero(app: AppItem) {
               )}
             </div>
 
-            <Links {...app} />
-
             <DownloadButton {...app} />
+
+            <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <Links {...app} />
+            </div>
           </div>
 
           {/* RIGHT — Hero image */}
           {app.heroURL && (
-            <div className="relative">
+            <div className="w-full flex justify-center lg:justify-end items-start">
               <Image
                 src={app.heroURL}
                 alt={`${app.title} Preview`}
-                width={1000}
-                height={800}
-                className="rounded-2xl object-cover w-full"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                width={300}
+                height={300}
                 priority
+                className="rounded-xl object-contain max-h-[500px] w-auto"
               />
             </div>
           )}
         </div>
+
+        {/* Feature cards */}
         {app.features && FeatureCards(app.features)}
       </div>
     </section>
@@ -190,9 +193,6 @@ export default async function AppDetailPage({ params }: AppDetailProps) {
           <AppHero {...app} />
         </div>
       </main>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col gap-8">
-        {/* <Links {...app} /> */}
-      </div>
     </>
   );
 }

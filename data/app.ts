@@ -36,7 +36,8 @@ export const apps: AppItem[] = [
     description: "",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.ActivityBuilder/large",
-    heroURL: "",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/ae/d2/deaed26a-b778-365d-1fe1-68438b4b9b0b/934a4b22-9252-4d14-b7e4-aa55bfdbb5d4_17_opaque.png/460x0w.png",
     categories: [],
     tags: [],
   }),
@@ -60,9 +61,11 @@ export const apps: AppItem[] = [
     description: "",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.MusicView-Pro/large",
-    heroURL: "",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/5e/6e/be/5e6ebe77-d6f9-7ff3-2833-396da1dda3a7/9f91232d-ac68-47b5-9d95-7765c8728641_1_opaque.png/460x0w.webp",
     categories: [],
     tags: [],
+    features: [],
   }),
   createAppItem({
     id: "6459730205",
@@ -341,7 +344,7 @@ export const apps: AppItem[] = [
     tags: [],
   }),
   createAppItem({
-    id: "6447479401",
+    id: "6448161962",
     path: "IdeaLog",
     title: "IdeaLog",
     subtitle: "Log, organise and manage your ideas",
@@ -635,7 +638,7 @@ export const apps: AppItem[] = [
     subtitle: "Manage your App Ad Campaigns",
     description: "",
     iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.CampaignManager/large",
+      "https://www.appatar.io/com.innovativedigitaltechnologies.Campaign-Manager/large",
     heroURL: "",
     categories: [],
     tags: [],
@@ -653,7 +656,7 @@ export const apps: AppItem[] = [
     tags: [],
   }),
   createAppItem({
-    id: "6749494534",
+    id: "6752533857",
     path: "Unblur",
     title: "Unblur",
     subtitle: "Unblur, restore and improve images",

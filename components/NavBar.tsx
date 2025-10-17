@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { contactEmail, externalAppsURL } from "../data/constants";
+import { contactEmail } from "../data/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +69,7 @@ export default function Navbar() {
         >
           <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:space-x-8">
             <Link
-              href={`${externalAppsURL}`}
+              href="/apps"
               className="font-medium text-gray-700 hover:text-gray-500 dark:text-gray-300 dark:hover:text-gray-400 transition"
             >
               Apps

@@ -8,7 +8,7 @@ export interface AppItem {
   description: string;
   iconURL: string;
   heroURL: string;
-  linkURL?: string;
+  linkURL: string;
   categories?: string[];
   tags?: string[];
   features?: AppFeature[];
