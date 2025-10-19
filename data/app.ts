@@ -35,6 +35,346 @@ function createFeature(title: string, description: string): AppFeature {
 
 export const apps: AppItem[] = [
   createAppItem({
+    id: "6752937087",
+    path: "PolaroidAI",
+    title: "Polaroid AI - Turn Memories Into Timeless Polaroids",
+    subtitle:
+      "Create Polaroid-Style Images with Friends, Family, or Celebrities",
+    description:
+      "Polaroid AI is an AI-powered photo app that transforms your photos into classic Polaroid-style keepsakes. Capture friends, family, or even celebrities, and bring moments to life in a timeless instant-photo format.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.Polaroid-AI/large",
+    heroURL: "/images/featured/polaroid-ai.jpg",
+    categories: ["Photography", "AI"],
+    tags: [
+      "AI",
+      "Polaroid",
+      "Photo Editing",
+      "Image Enhancement",
+      "Instant Photos",
+      "Memories",
+      "Celebrity Photos",
+      "Creative AI",
+      "Photo Trends",
+      "Meme",
+    ],
+    features: [
+      createFeature(
+        "Transform Your Photos Into Classic Polaroids",
+        "Polaroid AI recreates the distinctive style, colors, and borders of instant Polaroid photos, giving your images a nostalgic look."
+      ),
+      createFeature(
+        "AI-Powered Customization",
+        "Upload any photo — of friends, family, or celebrities — and let our AI generate authentic Polaroid-style images instantly."
+      ),
+      createFeature(
+        "Multiple Styles & Filters",
+        "Choose from a variety of Polaroid styles, vintage filters, and modern effects to make your images truly unique."
+      ),
+      createFeature(
+        "Easy to Share and Save",
+        "Download your AI-generated Polaroids in high resolution or share directly to social media platforms like Instagram, Threads, or TikTok."
+      ),
+      createFeature(
+        "Perfect for Fun or Keepsakes",
+        "Whether it's creating memes, celebrating memories, or making gifts, Polaroid AI makes every photo special."
+      ),
+    ],
+    metadata: {
+      title: "Polaroid AI - AI Polaroid Photo Generator | Creative Memories",
+      description:
+        "Polaroid AI turns your photos into classic Polaroid-style keepsakes using AI. Capture friends, family, or celebrities and create timeless, shareable images instantly.",
+      category: "Photography",
+      aliases: [
+        "ai-polaroid-generator",
+        "polaroid-photo-app",
+        "polaroid-ai-images",
+        "instant-polaroid-photos",
+      ],
+    },
+  }),
+  createAppItem({
+    id: "6752533857",
+    path: "Unblur",
+    title: "Unblur – AI Photo Enhancer",
+    subtitle: "Restore, Sharpen, and Enhance Your Images",
+    description:
+      "Unblur is an AI-powered photo enhancer that restores clarity, sharpens details, and improves image quality instantly. Perfect for old photos, professional shots, or everyday memories.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.Unblur/large",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/dc/a4/93dca410-d159-3de9-f23f-a822f97eeb46/Frame_1.png/460x0w.webp",
+    categories: ["Photography", "AI"],
+    tags: [
+      "AI",
+      "photo enhancement",
+      "image restoration",
+      "sharpen",
+      "Unblur",
+      "enhance",
+      "Remini",
+      "photos",
+    ],
+    features: [
+      createFeature(
+        "Restore Blurry Photos Instantly",
+        "Using advanced AI, Unblur brings your old, blurry, or low-quality photos back to life with enhanced clarity and detail."
+      ),
+      createFeature(
+        "Sharpen and Enhance Images",
+        "Improve the sharpness, texture, and quality of any photo — perfect for social media, work, or personal memories."
+      ),
+      createFeature(
+        "AI-Powered Smart Enhancement",
+        "Unblur intelligently detects areas that need improvement, preserving natural details while removing blur or noise."
+      ),
+      createFeature(
+        "Easy and Fast",
+        "Simply upload a photo and let Unblur do the work — no manual editing or technical skills required."
+      ),
+      createFeature(
+        "Perfect for Professionals and Memories",
+        "Enhance product shots, professional images, or cherished personal photos effortlessly with AI technology."
+      ),
+    ],
+    metadata: {
+      title: "Unblur – AI Photo Enhancer | Restore, Sharpen & Enhance Images",
+      description:
+        "Unblur is an AI-powered app that restores clarity, sharpens details, and enhances photo quality instantly. Perfect for old, blurry, or low-quality photos, professional shots, and social media images.",
+      category: "Photography",
+      aliases: [
+        "ai-photo-enhancer",
+        "photo-restoration",
+        "image-enhancer",
+        "unblur-images",
+        "sharpen-photos",
+      ],
+    },
+  }),
+  createAppItem({
+    id: "6746662820",
+    path: "Optrix",
+    title: "AI Headshot Generator for Professional Profiles",
+    subtitle: "Trusted by Professionals",
+    description:
+      "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.Optrix/large",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/8a/ad/0b8aad34-60a5-c70c-68ea-616976ff495d/Frame_1.png/460x0w.webp",
+    categories: [],
+    tags: [
+      "AI",
+      "Headshots",
+      "Professional Photos",
+      "LinkedIn",
+      "Profile Picture",
+    ],
+    features: [
+      createFeature(
+        "Why Choose Optrix - The Smarter AI Headshot Generator",
+        "From LinkedIn profiles to corporate bios, Optrix delivers professional AI headshots that look real, polished, and ready to impress."
+      ),
+      createFeature(
+        "How Optrix Creates Studio-Quality AI Headshots",
+        "Upload your selfies, choose your style, and let our AI generate realistic professional portraits — no cameras, studios, or photographers needed."
+      ),
+      createFeature(
+        "Get Realistic AI Headshots in Seconds",
+        "Our advanced AI models deliver lifelike lighting, sharp details, and natural facial features — all within minutes."
+      ),
+      createFeature(
+        "Trusted by Thousands of Professionals Worldwide",
+        "From entrepreneurs to recruiters, Optrix is the go-to AI headshot generator for creating premium-quality portraits that stand out."
+      ),
+    ],
+    metadata: {
+      title:
+        "AI Headshot Generator | Professional Headshots in Seconds - Optrix",
+      description:
+        "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
+      category: "PhotographyApplication",
+      aliases: ["ai-headshot-generator", "professional-headshots"],
+    },
+  }),
+  createAppItem({
+    id: "1625641475",
+    path: "SongSwipe",
+    title: "SongSwipe – Discover Music with a Swipe",
+    subtitle:
+      "Swipe to find your next favorite song and build playlists effortlessly",
+    description:
+      "SongSwipe lets you discover new music instantly with a fun, swipe-based interface. Swipe right to like, swipe left to skip — it’s that simple. Explore trending tracks, hidden gems, and curated playlists personalized to your taste. Whether you’re into pop, rap, indie, or chill vibes, SongSwipe helps you find songs you’ll love and create playlists in seconds.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.SongSwipe/large",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f1/21/fb/f121fb18-ec77-e1e0-f669-24de81da49d1/Screenshot_1.png/460x0w.webp",
+    categories: ["Music", "AI"],
+    tags: [
+      "music discovery",
+      "AI recommendations",
+      "playlist generator",
+      "song finder",
+      "music app",
+      "spotify alternative",
+      "song swiping",
+      "discover new artists",
+    ],
+    features: [
+      createFeature(
+        "Swipe to Discover",
+        "Find songs that match your taste — swipe right to save or left to skip, just like your favorite dating apps."
+      ),
+      createFeature(
+        "AI Music Recommendations",
+        "Smart algorithms learn what you love and curate personalized song suggestions every time you open the app."
+      ),
+      createFeature(
+        "Instant Playlist Builder",
+        "Automatically create playlists from the songs you've liked with one tap — perfect for Spotify or Apple Music."
+      ),
+      createFeature(
+        "Explore Trending Tracks",
+        "Stay ahead of the curve with daily trending picks and hidden indie gems."
+      ),
+      createFeature(
+        "Share Your Vibes",
+        "Easily share playlists and your top discoveries with friends directly from the app."
+      ),
+    ],
+    metadata: {
+      title: "SongSwipe - AI Music Discovery & Playlist Generator",
+      description:
+        "Discover new music effortlessly with SongSwipe. Swipe to like, skip, and build playlists from personalized AI recommendations. Your next favorite song is just a swipe away.",
+      category: "Music",
+      aliases: [
+        "ai-music-app",
+        "music-discovery",
+        "playlist-maker",
+        "song-finder",
+        "spotify-song-finder",
+        "music-recommendation-app",
+      ],
+    },
+  }),
+  createAppItem({
+    id: "6744641144",
+    path: "JustBookIt",
+    title: "JustBookIt – AI Travel Planner & Trip Generator",
+    subtitle: "Plan your dream holiday in seconds with AI",
+    description:
+      "JustBookIt is your AI-powered travel planner that instantly creates personalized trips, itineraries, and destinations based on your vibe. Whether you want a relaxing beach escape, an adventurous mountain getaway, or a romantic city break — JustBookIt finds and plans it all for you in seconds.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.JustBookIt/large",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/72/61/27/7261275f-337e-4c6b-682a-c18c42fe75cb/Frame_22.png/460x0w.webp",
+    categories: ["Travel", "AI"],
+    tags: [
+      "AI Travel",
+      "Trip Planner",
+      "AI Itinerary",
+      "Holiday Generator",
+      "Travel Assistant",
+      "AI Vacation Planner",
+      "Weekend Getaway",
+      "Smart Travel",
+      "Vibe Travel",
+    ],
+    features: [
+      createFeature(
+        "Instant AI Trip Planning",
+        "Tell JustBookIt your vibe — relaxing, adventurous, cultural, or romantic — and get a full travel plan in seconds."
+      ),
+      createFeature(
+        "Personalized Destination Picks",
+        "Discover hidden gems and trending destinations perfectly matched to your preferences and budget."
+      ),
+      createFeature(
+        "Smart AI Itineraries",
+        "Get daily schedules, restaurant suggestions, activities, and travel tips — all generated by AI and customizable by you."
+      ),
+      createFeature(
+        "All-in-One Travel Assistant",
+        "From packing tips to visa info, JustBookIt handles every part of your trip so you can focus on the fun."
+      ),
+      createFeature(
+        "Share & Book Easily",
+        "Save, share, or instantly book your dream holiday directly from your AI-generated plan."
+      ),
+    ],
+    metadata: {
+      title: "JustBookIt - AI Travel Planner & Vacation Generator",
+      description:
+        "Plan your dream holiday in seconds with JustBookIt. Discover personalized AI travel itineraries, destination ideas, and vacation plans based on your vibe and preferences.",
+      category: "Travel",
+      aliases: [
+        "ai-travel-planner",
+        "ai-trip-generator",
+        "travel-ai",
+        "vacation-planner",
+        "smart-travel-app",
+      ],
+    },
+  }),
+  createAppItem({
+    id: "6477750417",
+    path: "AILogo",
+    title: "AI Logo – Logo Maker & Brand Designer",
+    subtitle: "Create stunning professional logos in seconds with AI",
+    description:
+      "AI Logo helps you design unique, professional-quality logos instantly using the power of artificial intelligence. Whether you’re launching a startup, building a personal brand, or rebranding your business, AI Logo makes logo creation effortless. Generate unlimited logo ideas, customize colors, fonts, and layouts — no design skills required.",
+    iconURL:
+      "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Logo/large",
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/73/bf/3a73bf55-0732-e02c-63a0-74ecfd596f96/Screenshot_1.png/460x0w.webp",
+    categories: ["Design", "AI", "Business"],
+    tags: [
+      "logo maker",
+      "ai logo generator",
+      "brand design",
+      "business logo",
+      "startup branding",
+      "graphic design",
+      "logo creator",
+      "branding tool",
+    ],
+    features: [
+      createFeature(
+        "AI-Powered Logo Generation",
+        "Get unique logo designs instantly — powered by advanced AI trained on thousands of professional logo styles."
+      ),
+      createFeature(
+        "Customizable Designs",
+        "Edit colors, fonts, icons, and layouts to perfectly match your brand's identity — all inside the app."
+      ),
+      createFeature(
+        "Instant Branding Kit",
+        "Export your logo with matching color palettes and social media assets for a complete brand look."
+      ),
+      createFeature(
+        "Perfect for Startups & Creators",
+        "Save time and money with a fast, professional, and affordable alternative to hiring a designer."
+      ),
+      createFeature(
+        "High-Resolution Exports",
+        "Download logos in HD formats suitable for websites, print, and social media profiles."
+      ),
+    ],
+    metadata: {
+      title: "AI Logo - AI Logo Maker & Brand Design Generator",
+      description:
+        "Design a professional logo in seconds with AI Logo. Generate, customize, and export beautiful logos instantly — perfect for startups, creators, and businesses.",
+      category: "Design",
+      aliases: [
+        "ai-logo-generator",
+        "ai-logo-maker",
+        "logo-design-app",
+        "brand-logo-creator",
+        "startup-logo-generator",
+      ],
+    },
+  }),
+  createAppItem({
     id: "6443593416",
     path: "ActivityBuilder",
     title: "ActivityBuilder",
@@ -105,18 +445,6 @@ export const apps: AppItem[] = [
     description: "",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.FollowersWidget/large",
-    heroURL: "",
-    categories: [],
-    tags: [],
-  }),
-  createAppItem({
-    id: "1625641475",
-    path: "SongSwipe",
-    title: "SongSwipe",
-    subtitle: "Discover music, make playlists",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.SongSwipe/large",
     heroURL: "",
     categories: [],
     tags: [],
@@ -458,18 +786,6 @@ export const apps: AppItem[] = [
     tags: [],
   }),
   createAppItem({
-    id: "6477750417",
-    path: "AILogo",
-    title: "AI Logo",
-    subtitle: "AI Logo Generator",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Logo/large",
-    heroURL: "",
-    categories: [],
-    tags: [],
-  }),
-  createAppItem({
     id: "6478188140",
     path: "AIWriter",
     title: "AI Writer",
@@ -508,14 +824,62 @@ export const apps: AppItem[] = [
   createAppItem({
     id: "6502046156",
     path: "SongCover",
-    title: "Song Cover",
-    subtitle: "AI Generated Song Covers",
-    description: "",
+    title: "SongCover – AI Music Cover Generator",
+    subtitle: "Create AI Song Covers in Any Style or Voice",
+    description:
+      "SongCover lets you generate custom AI song covers with your favorite voices, genres, and artists. Turn any track into a new experience — from rock to pop to lo-fi — all powered by cutting-edge AI voice synthesis.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Song-Cover/large",
-    heroURL: "",
-    categories: [],
-    tags: [],
+    heroURL:
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/42/86/19/42861935-f67f-5d08-4f29-fc010bfc53ef/Screenshot_1.jpg/460x0w.webp",
+    categories: ["Music", "AI"],
+    tags: [
+      "AI Music",
+      "Song Cover",
+      "AI Singing",
+      "Music Generator",
+      "Voice Clone",
+      "Cover Songs",
+      "AI Artist",
+      "Remix",
+      "Jammable",
+    ],
+    features: [
+      createFeature(
+        "Generate AI Song Covers Instantly",
+        "Upload or select a song and let SongCover transform it into a fresh version using AI-generated voices and styles."
+      ),
+      createFeature(
+        "Choose Your Favorite Artist Style",
+        "Reimagine your favorite songs in the voice or style of different artists — from pop icons to rock legends."
+      ),
+      createFeature(
+        "AI Voice Customization",
+        "Adjust tone, pitch, and expression to create realistic and expressive performances powered by AI."
+      ),
+      createFeature(
+        "Share Your AI Covers",
+        "Easily save and share your AI-generated covers on TikTok, Instagram, or with friends."
+      ),
+      createFeature(
+        "Music Creativity, Redefined",
+        "Perfect for musicians, creators, and fans who want to explore how AI can remix, reinterpret, and personalize music."
+      ),
+    ],
+    metadata: {
+      title:
+        "SongCover - AI Music Cover Generator | Create AI Song Covers Instantly",
+      description:
+        "Create AI song covers in any voice or genre with SongCover. Generate, customize, and share AI-powered covers of your favorite songs instantly.",
+      category: "Music",
+      aliases: [
+        "ai-song-cover-generator",
+        "ai-music-cover",
+        "ai-singing-app",
+        "voice-clone-music",
+        "music-cover-ai",
+      ],
+    },
   }),
   createAppItem({
     id: "6714471349",
@@ -614,64 +978,6 @@ export const apps: AppItem[] = [
     tags: [],
   }),
   createAppItem({
-    id: "6744641144",
-    path: "JustBookIt",
-    title: "JustBookIt",
-    subtitle: "Plan your dream holiday in seconds",
-    description: "",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.JustBookIt/large",
-    heroURL: "",
-    categories: [],
-    tags: [],
-  }),
-  createAppItem({
-    id: "6746662820",
-    path: "Optrix",
-    title: "AI Headshot Generator for Professional Profiles",
-    subtitle: "Trusted by Professionals",
-    description:
-      "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.Optrix/large",
-    heroURL:
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/8a/ad/0b8aad34-60a5-c70c-68ea-616976ff495d/Frame_1.png/460x0w.webp",
-    categories: [],
-    tags: [
-      "AI",
-      "Headshots",
-      "Professional Photos",
-      "LinkedIn",
-      "Profile Picture",
-    ],
-    features: [
-      createFeature(
-        "Why Choose Optrix - The Smarter AI Headshot Generator",
-        "From LinkedIn profiles to corporate bios, Optrix delivers professional AI headshots that look real, polished, and ready to impress."
-      ),
-      createFeature(
-        "How Optrix Creates Studio-Quality AI Headshots",
-        "Upload your selfies, choose your style, and let our AI generate realistic professional portraits — no cameras, studios, or photographers needed."
-      ),
-      createFeature(
-        "Get Realistic AI Headshots in Seconds",
-        "Our advanced AI models deliver lifelike lighting, sharp details, and natural facial features — all within minutes."
-      ),
-      createFeature(
-        "Trusted by Thousands of Professionals Worldwide",
-        "From entrepreneurs to recruiters, Optrix is the go-to AI headshot generator for creating premium-quality portraits that stand out."
-      ),
-    ],
-    metadata: {
-      title:
-        "AI Headshot Generator | Professional Headshots in Seconds - Optrix",
-      description:
-        "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
-      category: "PhotographyApplication",
-      aliases: ["ai-headshot-generator", "professional-headshots"],
-    },
-  }),
-  createAppItem({
     id: "6749494534",
     path: "CampaignManager",
     title: "Campaign Manager",
@@ -694,122 +1000,5 @@ export const apps: AppItem[] = [
     heroURL: "",
     categories: [],
     tags: [],
-  }),
-  createAppItem({
-    id: "6752533857",
-    path: "Unblur",
-    title: "Unblur – AI Photo Enhancer",
-    subtitle: "Restore, Sharpen, and Enhance Your Images",
-    description:
-      "Unblur is an AI-powered photo enhancer that restores clarity, sharpens details, and improves image quality instantly. Perfect for old photos, professional shots, or everyday memories.",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.Unblur/large",
-    heroURL:
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/93/dc/a4/93dca410-d159-3de9-f23f-a822f97eeb46/Frame_1.png/460x0w.webp",
-    categories: ["Photography", "AI"],
-    tags: [
-      "AI",
-      "photo enhancement",
-      "image restoration",
-      "sharpen",
-      "Unblur",
-      "enhance",
-      "Remini",
-      "photos",
-    ],
-    features: [
-      createFeature(
-        "Restore Blurry Photos Instantly",
-        "Using advanced AI, Unblur brings your old, blurry, or low-quality photos back to life with enhanced clarity and detail."
-      ),
-      createFeature(
-        "Sharpen and Enhance Images",
-        "Improve the sharpness, texture, and quality of any photo — perfect for social media, work, or personal memories."
-      ),
-      createFeature(
-        "AI-Powered Smart Enhancement",
-        "Unblur intelligently detects areas that need improvement, preserving natural details while removing blur or noise."
-      ),
-      createFeature(
-        "Easy and Fast",
-        "Simply upload a photo and let Unblur do the work — no manual editing or technical skills required."
-      ),
-      createFeature(
-        "Perfect for Professionals and Memories",
-        "Enhance product shots, professional images, or cherished personal photos effortlessly with AI technology."
-      ),
-    ],
-    metadata: {
-      title: "Unblur – AI Photo Enhancer | Restore, Sharpen & Enhance Images",
-      description:
-        "Unblur is an AI-powered app that restores clarity, sharpens details, and enhances photo quality instantly. Perfect for old, blurry, or low-quality photos, professional shots, and social media images.",
-      category: "Photography",
-      aliases: [
-        "ai-photo-enhancer",
-        "photo-restoration",
-        "image-enhancer",
-        "unblur-images",
-        "sharpen-photos",
-      ],
-    },
-  }),
-  createAppItem({
-    id: "6752937087",
-    path: "PolaroidAI",
-    title: "Polaroid AI – Turn Memories Into Timeless Polaroids",
-    subtitle:
-      "Create Polaroid-Style Images with Friends, Family, or Celebrities",
-    description:
-      "Polaroid AI is an AI-powered photo app that transforms your photos into classic Polaroid-style keepsakes. Capture friends, family, or even celebrities, and bring moments to life in a timeless instant-photo format.",
-    iconURL:
-      "https://www.appatar.io/com.innovativedigitaltechnologies.Polaroid-AI/large",
-    heroURL: "/images/featured/polaroid-ai.jpg",
-    categories: ["Photography", "AI"],
-    tags: [
-      "AI",
-      "Polaroid",
-      "Photo Editing",
-      "Image Enhancement",
-      "Instant Photos",
-      "Memories",
-      "Celebrity Photos",
-      "Creative AI",
-      "Photo Trends",
-      "Meme",
-    ],
-    features: [
-      createFeature(
-        "Transform Your Photos Into Classic Polaroids",
-        "Polaroid AI recreates the distinctive style, colors, and borders of instant Polaroid photos, giving your images a nostalgic look."
-      ),
-      createFeature(
-        "AI-Powered Customization",
-        "Upload any photo — of friends, family, or celebrities — and let our AI generate authentic Polaroid-style images instantly."
-      ),
-      createFeature(
-        "Multiple Styles & Filters",
-        "Choose from a variety of Polaroid styles, vintage filters, and modern effects to make your images truly unique."
-      ),
-      createFeature(
-        "Easy to Share and Save",
-        "Download your AI-generated Polaroids in high resolution or share directly to social media platforms like Instagram, Threads, or TikTok."
-      ),
-      createFeature(
-        "Perfect for Fun or Keepsakes",
-        "Whether it’s creating memes, celebrating memories, or making gifts, Polaroid AI makes every photo special."
-      ),
-    ],
-    metadata: {
-      title: "Polaroid AI – AI Polaroid Photo Generator | Creative Memories",
-      description:
-        "Polaroid AI turns your photos into classic Polaroid-style keepsakes using AI. Capture friends, family, or celebrities and create timeless, shareable images instantly.",
-      category: "Photography",
-      aliases: [
-        "ai-polaroid-generator",
-        "polaroid-photo-app",
-        "polaroid-ai-images",
-        "instant-polaroid-photos",
-      ],
-    },
   }),
 ];

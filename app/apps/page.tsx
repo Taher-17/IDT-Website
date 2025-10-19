@@ -41,7 +41,7 @@ export default function AppsPage() {
             rel="noopener noreferrer"
             className="text-blue-600 dark:text-blue-400 underline font-medium"
           >
-            Visit our App Store Developer Page
+            View on App Store
           </a>
         </div>
         <AppsList apps={apps} />

@@ -33,11 +33,11 @@ export default function AppsList({ apps }: Props) {
         />
       </div>
       {/* App Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
         {filteredApps.map((app) => (
-          <Link key={app.id} href={`/apps/${app.path}`}>
+          <Link key={app.id} href={`/apps/${app.path}`} className="h-full">
             <figure
-              className="rounded-2xl ring-1 ring-gray-900/10 dark:ring-white/20 p-6 flex flex-col gap-2"
+              className="rounded-2xl ring-1 ring-gray-900/10 dark:ring-white/20 p-6 flex flex-col justify-center gap-2 h-full"
               style={{ backgroundColor: "var(--background)" }}
             >
               {/* Icon + Title/Subtitle Horizontal */}

@@ -18,7 +18,7 @@ module.exports = {
 
     const appPaths = apps.map((app) => ({
       loc: `/apps/${app.path}`,
-      changefreq: "weekly",
+      changefreq: "daily",
       priority: 0.8,
       lastmod: new Date().toISOString(),
     }));
@@ -29,7 +29,7 @@ module.exports = {
 
     const blogPaths = blogs.map((blog) => ({
       loc: `/blog/${blog.id}`,
-      changefreq: "weekly",
+      changefreq: "daily",
       priority: 0.7,
       lastmod: new Date(blog.updatedAt || Date.now()).toISOString(),
     }));

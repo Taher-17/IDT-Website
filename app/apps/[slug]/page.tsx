@@ -108,7 +108,7 @@ function FeatureCards(features: AppFeature[]) {
           key={f.title}
         >
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white text-lg mb-2">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-lg">
               {f.title}
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -186,6 +186,7 @@ export async function generateMetadata({ params }: AppDetailProps) {
       canonical: `https://innovativedigitaltechnologies.software/apps/${app.path}`,
     },
     other: {
+      "apple-itunes-app": `app-id=${app.id}`,
       "application/ld+json": JSON.stringify({
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
