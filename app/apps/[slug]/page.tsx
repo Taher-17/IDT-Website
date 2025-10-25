@@ -3,6 +3,7 @@ import { apps } from "@/data/app";
 import { AppItem } from "@/types/AppItem";
 import { AppFeature } from "@/types/AppFeature";
 import { contactEmail } from "@/data/constants";
+import ShareButtons from "@/components/ShareButtons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -46,6 +47,11 @@ function AppHero(app: AppItem) {
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Links {...app} />
             </div>
+
+            <ShareButtons
+              url={`https://innovativedigitaltechnologies.software/apps/${app.path}`}
+              title={app.title}
+            />
           </div>
 
           {/* RIGHT — Hero image */}

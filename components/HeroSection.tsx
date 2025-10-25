@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
         {/* Primary Button */}
         <a
-          href={`${externalAppsURL}`}
+          href="/apps"
           className="w-50 rounded-lg px-6 py-3 text-sm font-semibold text-white shadow-md ring-1 ring-inset ring-blue-300/30 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 transition-all duration-200 bg-blue-500 dark:bg-blue-600 dark:hover:bg-blue-400"
         >
           Explore Our Apps
