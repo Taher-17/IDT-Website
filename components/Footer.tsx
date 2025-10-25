@@ -6,7 +6,7 @@ import { contactEmail, tiktokURL, instagramURL } from "@/data/constants";
 
 export default function Footer() {
   return (
-    <footer className="py-8 pt-12">
+    <footer className="py-8 pt-12 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         {/* Brand / Text */}
         <p className="text-gray-700 dark:text-gray-300 text-sm">
@@ -14,10 +14,19 @@ export default function Footer() {
           rights reserved.
         </p>
 
-        {/* Social Links */}
-        <div className="flex gap-6">
+        {/* Links */}
+        <div className="flex gap-6 items-center">
+          {/* Blog Link */}
           <Link
-            href={`${tiktokURL}`}
+            href="/blog"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition text-sm"
+          >
+            Blog
+          </Link>
+
+          {/* Social Links */}
+          <Link
+            href={tiktokURL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition"
@@ -26,7 +35,7 @@ export default function Footer() {
           </Link>
 
           <Link
-            href={`${instagramURL}`}
+            href={instagramURL}
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-400 transition"
