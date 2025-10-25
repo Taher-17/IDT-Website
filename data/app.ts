@@ -160,8 +160,7 @@ export const apps: AppItem[] = [
       "Create professional AI headshots for LinkedIn, resumes, and social media in seconds. Try Optrix - your AI headshot generator.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.Optrix/large",
-    heroURL:
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0b/8a/ad/0b8aad34-60a5-c70c-68ea-616976ff495d/Frame_1.png/460x0w.webp",
+    heroURL: "/images/featured/optrix.png",
     categories: [],
     tags: [
       "AI",
@@ -319,14 +318,13 @@ export const apps: AppItem[] = [
   createAppItem({
     id: "6477750417",
     path: "AILogo",
-    title: "AI Logo – Logo Maker & Brand Designer",
+    title: "AI Logo - Logo Maker & Brand Designer",
     subtitle: "Create stunning professional logos in seconds with AI",
     description:
       "AI Logo helps you design unique, professional-quality logos instantly using the power of artificial intelligence. Whether you’re launching a startup, building a personal brand, or rebranding your business, AI Logo makes logo creation effortless. Generate unlimited logo ideas, customize colors, fonts, and layouts — no design skills required.",
     iconURL:
       "https://www.appatar.io/com.innovativedigitaltechnologies.AI-Logo/large",
-    heroURL:
-      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3a/73/bf/3a73bf55-0732-e02c-63a0-74ecfd596f96/Screenshot_1.png/460x0w.webp",
+    heroURL: "/images/featured/ai-logo.png",
     categories: ["Design", "AI", "Business"],
     tags: [
       "logo maker",
