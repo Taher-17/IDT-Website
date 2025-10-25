@@ -16,6 +16,12 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex gap-6 items-center">
+          <Link
+            href="/deals"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition text-sm"
+          >
+            Deals
+          </Link>
           {/* Blog Link */}
           <Link
             href="/blog"
